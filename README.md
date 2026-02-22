@@ -1,2 +1,2 @@
 # Wafliai
-Komandinis universiteto modulio darbas.
+Komandinis universiteto modulio darbas. OOGAAA BOOOGAAA
