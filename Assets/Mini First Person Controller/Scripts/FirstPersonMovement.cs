@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class FirstPersonMovement : MonoBehaviour
 {
-    public float speed = 5;
+    public static float speed = 5;
 
     [Header("Running")]
-    public bool canRun = true;
+    public static bool canRun = true;
     public bool IsRunning { get; private set; }
     public float runSpeed = 9;
     public KeyCode runningKey = KeyCode.LeftShift;
@@ -40,5 +40,18 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Apply movement.
         rigidbody.linearVelocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y);
+    }
+    public static void ToggleMovement(bool movement)
+    {
+        if (movement)
+        {
+            speed = 5;
+            canRun = true;
+        }
+        if (!movement)
+        {
+            speed = 0;
+            canRun = false;
+        }
     }
 }
