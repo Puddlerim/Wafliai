@@ -48,7 +48,7 @@ public class FirstPersonMovement : MonoBehaviour
             speed = 5;
             canRun = true;
         }
-        else
+        if (!movement)
         {
             speed = 0;
             canRun = false;

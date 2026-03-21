@@ -18,29 +18,31 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField]
     Transform buttonsParent;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void BeginDialogue(Dialogue dialogue)
     {
         if (dialogue.Choices.Count == 0)
         {
             dialoguePanel.SetActive(false);
 
-            FirstPersonMovement.ToggleMovement(false);
+            FirstPersonMovement.ToggleMovement(true);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+        else { 
+            FirstPersonMovement.ToggleMovement(false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
 
-        FirstPersonMovement.ToggleMovement(true);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+            dialoguePanel.SetActive(true);
 
-        dialoguePanel.SetActive(true);
-
-        ClearChoices();
-        AnimateText(dialogue);
+            ClearChoices();
+            AnimateText(dialogue);
+        }
     }
-
+    public void ClearText()
+    {
+        dialogueText.text = "";
+    }
     void ClearChoices()
     {
         foreach (Transform child in buttonsParent)
