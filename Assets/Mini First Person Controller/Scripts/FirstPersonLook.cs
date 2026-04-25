@@ -47,6 +47,7 @@ public class FirstPersonLook : MonoBehaviour
 
     public void FreezeLook()
     {
+        Debug.Log("FreezeLook called on " + gameObject.name);
         canLook = false;
         frameVelocity = Vector2.zero;
     }

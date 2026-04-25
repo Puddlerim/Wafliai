@@ -18,8 +18,12 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField]
     Transform buttonsParent;
+
+    private FirstPersonLook playerLook;
+
     public void BeginDialogue(Dialogue dialogue)
     {
+        FirstPersonLook playerLook = FindFirstObjectByType<FirstPersonLook>();
         if (dialogue.Choices.Count == 0)
         {
             dialoguePanel.SetActive(false);
@@ -27,6 +31,7 @@ public class DialogueManager : MonoBehaviour
             FirstPersonMovement.ToggleMovement(true);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            playerLook.ResumeLook();
         }
         else { 
             FirstPersonMovement.ToggleMovement(false);
@@ -35,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
             dialoguePanel.SetActive(true);
 
+            playerLook.FreezeLook();
             ClearChoices();
             AnimateText(dialogue);
         }
