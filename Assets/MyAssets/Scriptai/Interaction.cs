@@ -12,7 +12,7 @@ public class Interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player_detection && Input.GetKeyDown(KeyCode.E))
+        if (player_detection && Input.GetKeyDown(KeyCode.F))
         {
             dialogueManager.BeginDialogue(dialogue);
             UI.instance.SetText("");
@@ -22,7 +22,7 @@ public class Interaction : MonoBehaviour
     {
         if (other.name == "Capsule Mesh")
         {
-            UI.instance.SetText("Press E to interact");
+            UI.instance.SetText("Press F to interact");
             player_detection = true;
         }
     }
