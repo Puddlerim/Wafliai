@@ -19,9 +19,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     Transform buttonsParent;
 
-    private FirstPersonLook playerLook;
-
-    private bool Talking;
+    [SerializeField]
+    GameObject textPanel;
 
     public void BeginDialogue(Dialogue dialogue)
     {
@@ -29,17 +28,20 @@ public class DialogueManager : MonoBehaviour
         if (dialogue.Choices.Count == 0)
         {
             dialoguePanel.SetActive(false);
+            textPanel.SetActive(false);
 
             FirstPersonMovement.ToggleMovement(true);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             playerLook.ResumeLook();
         }
-        else { 
+        else 
+        { 
             FirstPersonMovement.ToggleMovement(false);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
+            textPanel.SetActive(true);
             dialoguePanel.SetActive(true);
 
             playerLook.FreezeLook();
