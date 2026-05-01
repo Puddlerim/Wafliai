@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6d457b8b943594aaea09cf68d7bb03, type: 3}
+  m_Name: C_LEVEL1_3
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  choices:
+  - {fileID: 11400000, guid: 3c9832250985c164badce69e2eb9c6ec, type: 2}
+  - {fileID: 11400000, guid: 2cb384236b151a34fad8ed3654c08a14, type: 2}
+  - {fileID: 11400000, guid: 6957909f90b2001458c2b440a4dc7710, type: 2}
+  optionName: "Su pilna ma\u0161ina alaus?"
+  dialogueText: "\u012E smulkmenas nesigilinam."
