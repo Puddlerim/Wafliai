@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6d457b8b943594aaea09cf68d7bb03, type: 3}
   m_Name: Main_3
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  choices: []
-  optionName: 
-  dialogueText: 
+  choices:
+  - {fileID: 11400000, guid: 2c9501c2671e21e4096b83f82627aaa5, type: 2}
+  optionName: "Man \u010Dia nejauku."
+  dialogueText: "\u0160tai tod\u0117l tau ir reikia alaus."

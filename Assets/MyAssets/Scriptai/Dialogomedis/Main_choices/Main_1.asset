@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6d457b8b943594aaea09cf68d7bb03, type: 3}
   m_Name: Main_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  choices: []
-  optionName: 
-  dialogueText: 
+  choices:
+  - {fileID: 11400000, guid: d3ec553a32bd73b4abd00f9e11e7bc38, type: 2}
+  optionName: "K\u0105?"
+  dialogueText: "Paliekam daiktus ramyb\u0117j ir einam prie lau\u017Eo."

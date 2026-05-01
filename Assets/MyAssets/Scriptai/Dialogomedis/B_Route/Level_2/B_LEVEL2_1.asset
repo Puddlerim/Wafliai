@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6d457b8b943594aaea09cf68d7bb03, type: 3}
   m_Name: B_LEVEL2_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  choices: []
+  choices:
+  - {fileID: 11400000, guid: 4eee08b70a3eea74e830d6dcb4afd655, type: 2}
   optionName: "Kiek alaus atsive\u017Eei?"
   dialogueText: Pagaliau einam prie reikalo.

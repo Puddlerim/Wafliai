@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6d457b8b943594aaea09cf68d7bb03, type: 3}
   m_Name: Main_2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  choices: []
-  optionName: 
-  dialogueText: 
+  choices:
+  - {fileID: 11400000, guid: ad7164dccca9bf84fae875bb77300d51, type: 2}
+  optionName: Ir tada?
+  dialogueText: "I\u0161gersim. Pas\u0117d\u0117sim. Matau esi \u012Fsitemp\u0119s."

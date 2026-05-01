@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: C_LEVEL2_5
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   choices:
-  - {fileID: 11400000, guid: be6e2d864e1e26d4d9af04da9a266005, type: 2}
+  - {fileID: 11400000, guid: d22a1430421c3154ebc9700c6cdc23db, type: 2}
   optionName: "Tiesiog fantasti\u0161ka."
-  dialogueText: 
+  dialogueText: "\u017Dinai k\u0105?"

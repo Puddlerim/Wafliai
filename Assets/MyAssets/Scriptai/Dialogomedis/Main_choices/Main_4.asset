@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6d457b8b943594aaea09cf68d7bb03, type: 3}
   m_Name: Main_4
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  choices: []
-  optionName: 
-  dialogueText: 
+  choices:
+  - {fileID: 11400000, guid: 76a304c5e3faeee478dc22f7377b3d5c, type: 2}
+  optionName: "Gal tu ir teisus. A\u0161 per daug apsikraunu."
+  dialogueText: "Varom bach\u016Bras."
