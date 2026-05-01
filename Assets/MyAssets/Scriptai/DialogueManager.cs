@@ -21,6 +21,8 @@ public class DialogueManager : MonoBehaviour
 
     private FirstPersonLook playerLook;
 
+    private bool Talking;
+
     public void BeginDialogue(Dialogue dialogue)
     {
         FirstPersonLook playerLook = FindFirstObjectByType<FirstPersonLook>();

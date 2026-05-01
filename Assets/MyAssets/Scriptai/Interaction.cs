@@ -9,11 +9,13 @@ public class Interaction : MonoBehaviour
     Dialogue dialogue;
 
     bool player_detection = false;
+    bool currently_talking = false;
     // Update is called once per frame
     void Update()
     {
-        if (player_detection && Input.GetKeyDown(KeyCode.F))
+        if (player_detection && Input.GetKeyDown(KeyCode.F) && !currently_talking)
         {
+            currently_talking = true;
             dialogueManager.BeginDialogue(dialogue);
             UI.instance.SetText("");
         }
@@ -29,6 +31,7 @@ public class Interaction : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         player_detection = false;
+        currently_talking = false;
         UI.instance.SetText("");
         dialogueManager.ClearText();
     }
