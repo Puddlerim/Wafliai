@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: C_LEVEL2_4
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   choices:
-  - {fileID: 11400000, guid: be6e2d864e1e26d4d9af04da9a266005, type: 2}
+  - {fileID: 11400000, guid: a30b02ecdbfc3a846b318658463c91d1, type: 2}
   optionName: "Kaip atrodo pus\u0117 karto?"
   dialogueText: "Atva\u017Eiavau, lijo, prisig\u0117riau ir u\u017Emigau ma\u0161inoj."
