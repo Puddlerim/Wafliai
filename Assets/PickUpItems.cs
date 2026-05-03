@@ -6,8 +6,6 @@ public class PickUpItems : MonoBehaviour
     public GameObject activatingOB;
     public GameObject pickupText;
 
-    public PickupCounter pickupCounter;
-
     public bool inReach;
 
     void OnTriggerEnter(Collider other)
@@ -15,7 +13,6 @@ public class PickUpItems : MonoBehaviour
         if (other.CompareTag("Reach"))
         {
             inReach = true;
-
             if (pickupText != null)
                 pickupText.SetActive(true);
         }
@@ -26,7 +23,6 @@ public class PickUpItems : MonoBehaviour
         if (other.CompareTag("Reach"))
         {
             inReach = false;
-
             if (pickupText != null)
                 pickupText.SetActive(false);
         }
@@ -44,11 +40,6 @@ public class PickUpItems : MonoBehaviour
 
             if (pickupText != null)
                 pickupText.SetActive(false);
-
-            if (pickupCounter != null)
-                pickupCounter.AddPickup();
-
-            inReach = false;
         }
     }
 }

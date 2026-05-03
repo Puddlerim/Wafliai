@@ -20,6 +20,6 @@ public class PickupCounter : MonoBehaviour
 
     private void UpdateCounterText()
     {
-        counterText.text = "Picked up items: " + pickupCount + "/?";
+        counterText.text = "Picked up items: " + pickupCount;
     }
 }
