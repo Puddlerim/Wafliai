@@ -32,7 +32,7 @@ public class PickUpItems : MonoBehaviour
                 playerInventory = other.transform.root.GetComponentInChildren<PlayerInventory>();
             }
 
-            Debug.Log("Prie item. Inventory rastas: " + (playerInventory != null));
+            Debug.Log("ITEM: Inventory rastas: " + (playerInventory != null));
 
             if (pickupText != null)
                 pickupText.SetActive(true);
@@ -63,25 +63,23 @@ public class PickUpItems : MonoBehaviour
     {
         if (playerInventory == null)
         {
-            Debug.Log("KLAIDA: PlayerInventory nerastas, item nepridetas.");
+            Debug.Log("ITEM KLAIDA: PlayerInventory nerastas.");
             return;
         }
 
         playerInventory.AddItem();
+
+        if (pickupText != null)
+            pickupText.SetActive(false);
+
+        if (activatingOB != null)
+            activatingOB.SetActive(true);
 
         if (pickupOB != null)
             pickupOB.SetActive(false);
         else
             gameObject.SetActive(false);
 
-        if (activatingOB != null)
-            activatingOB.SetActive(true);
-
-        if (pickupText != null)
-            pickupText.SetActive(false);
-
         inReach = false;
-
-        Debug.Log("Item paimtas. Dabar turi item'u: " + playerInventory.collectedItems);
     }
 }

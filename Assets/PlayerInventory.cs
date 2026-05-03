@@ -1,18 +1,35 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
     public int collectedItems = 0;
     public int requiredItems = 2;
 
-    public bool HasRequiredItems()
+    public TextMeshProUGUI itemsText;
+
+    void Start()
     {
-        return collectedItems >= requiredItems;
+        UpdateText();
     }
 
     public void AddItem()
     {
         collectedItems++;
-        Debug.Log("Surinkta item'u: " + collectedItems);
+        Debug.Log("PLAYER INVENTORY: dabar turi item'u: " + collectedItems);
+        UpdateText();
+    }
+
+    public bool HasRequiredItems()
+    {
+        return collectedItems >= requiredItems;
+    }
+
+    void UpdateText()
+    {
+        if (itemsText != null)
+        {
+            itemsText.text = "Picked up items: " + collectedItems;
+        }
     }
 }

@@ -3,12 +3,12 @@
 public class GunShoot : MonoBehaviour
 {
     public Camera playerCamera;
+    public Animator gunAnimator;
+    public AudioSource gunSound;
 
     public float damage = 25f;
     public float range = 100f;
     public float fireRate = 0.3f;
-
-    public Animator gunAnimator;
 
     private float nextTimeToFire = 0f;
 
@@ -23,10 +23,14 @@ public class GunShoot : MonoBehaviour
 
     void Shoot()
     {
-        // Paleidžia šūvio animaciją nuo pradžios
         if (gunAnimator != null)
         {
             gunAnimator.Play("gunshot", 0, 0f);
+        }
+
+        if (gunSound != null)
+        {
+            gunSound.Play();
         }
 
         RaycastHit hit;
@@ -41,10 +45,6 @@ public class GunShoot : MonoBehaviour
             {
                 enemy.TakeDamage(damage);
             }
-        }
-        else
-        {
-            Debug.Log("Suvis, bet nepataikei.");
         }
     }
 }

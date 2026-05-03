@@ -11,57 +11,46 @@ public class WeaponPickup : MonoBehaviour
     void Start()
     {
         if (armsWithGun != null)
-        {
             armsWithGun.SetActive(false);
-        }
 
         if (pickupText != null)
-        {
             pickupText.SetActive(false);
-        }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        PlayerInventory foundInventory = other.GetComponentInParent<PlayerInventory>();
-
-        if (foundInventory == null)
-        {
-            foundInventory = other.transform.root.GetComponentInChildren<PlayerInventory>();
-        }
-
-        if (other.CompareTag("Reach") || foundInventory != null)
+        if (other.CompareTag("Reach"))
         {
             inReach = true;
-            playerInventory = foundInventory;
 
-            Debug.Log("Prie ginklo. Inventory rastas: " + (playerInventory != null));
+            playerInventory = other.GetComponentInParent<PlayerInventory>();
+
+            if (playerInventory == null)
+            {
+                playerInventory = other.transform.root.GetComponentInChildren<PlayerInventory>();
+            }
+
+            Debug.Log("GINKLAS: Inventory rastas: " + (playerInventory != null));
+
+            if (playerInventory != null)
+            {
+                Debug.Log("GINKLAS: PlayerInventory item'u kiekis: " + playerInventory.collectedItems);
+            }
 
             if (pickupText != null)
-            {
                 pickupText.SetActive(true);
-            }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        PlayerInventory foundInventory = other.GetComponentInParent<PlayerInventory>();
-
-        if (foundInventory == null)
-        {
-            foundInventory = other.transform.root.GetComponentInChildren<PlayerInventory>();
-        }
-
-        if (other.CompareTag("Reach") || foundInventory != null)
+        if (other.CompareTag("Reach"))
         {
             inReach = false;
             playerInventory = null;
 
             if (pickupText != null)
-            {
                 pickupText.SetActive(false);
-            }
         }
     }
 
@@ -77,7 +66,7 @@ public class WeaponPickup : MonoBehaviour
     {
         if (playerInventory == null)
         {
-            Debug.Log("Negali paimti ginklo: PlayerInventory nerastas.");
+            Debug.Log("GINKLAS KLAIDA: PlayerInventory nerastas.");
             return;
         }
 
@@ -93,16 +82,14 @@ public class WeaponPickup : MonoBehaviour
         }
         else
         {
-            Debug.Log("KLAIDA: Arms With Gun nepriskirtas WeaponPickup Inspector lange.");
+            Debug.Log("GINKLAS KLAIDA: Arms With Gun nepriskirtas.");
             return;
         }
 
         if (pickupText != null)
-        {
             pickupText.SetActive(false);
-        }
 
-        Debug.Log("Ginklas paimtas. Rankos ir ginklas ijungti.");
+        Debug.Log("Ginklas paimtas.");
 
         Destroy(gameObject);
     }
