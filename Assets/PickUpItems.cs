@@ -8,11 +8,32 @@ public class PickUpItems : MonoBehaviour
 
     public bool inReach;
 
+    private PlayerInventory playerInventory;
+
+    void Start()
+    {
+        if (pickupText != null)
+            pickupText.SetActive(false);
+
+        if (activatingOB != null)
+            activatingOB.SetActive(false);
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Reach"))
         {
             inReach = true;
+
+            playerInventory = other.GetComponentInParent<PlayerInventory>();
+
+            if (playerInventory == null)
+            {
+                playerInventory = other.transform.root.GetComponentInChildren<PlayerInventory>();
+            }
+
+            Debug.Log("ITEM: Inventory rastas: " + (playerInventory != null));
+
             if (pickupText != null)
                 pickupText.SetActive(true);
         }
@@ -23,6 +44,8 @@ public class PickUpItems : MonoBehaviour
         if (other.CompareTag("Reach"))
         {
             inReach = false;
+            playerInventory = null;
+
             if (pickupText != null)
                 pickupText.SetActive(false);
         }
@@ -32,14 +55,31 @@ public class PickUpItems : MonoBehaviour
     {
         if (inReach && Input.GetKeyDown(KeyCode.E))
         {
-            if (pickupOB != null)
-                pickupOB.SetActive(false);
-
-            if (activatingOB != null)
-                activatingOB.SetActive(true);
-
-            if (pickupText != null)
-                pickupText.SetActive(false);
+            PickUp();
         }
+    }
+
+    void PickUp()
+    {
+        if (playerInventory == null)
+        {
+            Debug.Log("ITEM KLAIDA: PlayerInventory nerastas.");
+            return;
+        }
+
+        playerInventory.AddItem();
+
+        if (pickupText != null)
+            pickupText.SetActive(false);
+
+        if (activatingOB != null)
+            activatingOB.SetActive(true);
+
+        if (pickupOB != null)
+            pickupOB.SetActive(false);
+        else
+            gameObject.SetActive(false);
+
+        inReach = false;
     }
 }

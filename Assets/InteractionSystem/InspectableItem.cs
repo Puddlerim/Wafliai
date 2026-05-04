@@ -11,8 +11,27 @@ public class InspectableItem : MonoBehaviour
     [Header("Prompt")]
     public string promptText = "Press E to inspect";
 
+    [Header("Pickup Counter")]
+    public PickupCounter pickupCounter;
+
+    private bool hasBeenPickedUp = false;
+
+    private void Start()
+    {
+        if (pickupCounter == null)
+            pickupCounter = FindObjectOfType<PickupCounter>();
+    }
+
     public void OnPickedUp()
     {
+        if (hasBeenPickedUp)
+            return;
+
+        hasBeenPickedUp = true;
+
+        if (pickupCounter != null)
+            pickupCounter.AddPickup();
+
         if (worldObject != null)
             worldObject.SetActive(false);
         else
@@ -22,7 +41,5 @@ public class InspectableItem : MonoBehaviour
     public void OnInspectClosed()
     {
         // Leave empty for now.
-        // Later you can use this if you want the item to return to the world,
-        // go into inventory, play a sound, etc.
     }
 }
