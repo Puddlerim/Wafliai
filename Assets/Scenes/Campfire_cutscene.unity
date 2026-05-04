@@ -250,13 +250,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12010047}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15722768, y: -0.7745844, z: 0.21187726, w: -0.57480997}
-  m_LocalPosition: {x: 493.94818, y: 50.82936, z: 265.10834}
+  m_LocalRotation: {x: 0.06465179, y: -0.52003723, z: 0.11820453, w: 0.8434508}
+  m_LocalPosition: {x: 2.6150384, y: 0.35261032, z: -0.68993014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 30.26328, y: 139.8722, z: 352.3232}
+  m_Father: {fileID: 1475886481}
+  m_LocalEulerAnglesHint: {x: -0.000002976731, y: -0.0000205777, z: 0.000003740216}
 --- !u!95 &12010052
 Animator:
   serializedVersion: 7
@@ -390,8 +390,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Baudriau, sakiau tau \u2013 \u0161i vieta tobula. Joki\u0173 \u017Emoni\u0173,
-    jokio ry\u0161io, nieko. Tik mi\u0161kas be galo.\r\n"
+  m_text: "Nu k\u0105\u2026 sakiau, kad verta buvo \u010Dia va\u017Eiuot. O tu \u010Dia
+    bijojai."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -663,7 +663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2026Tu rimtai tai atsive\u017Eei?\r\n"
+  m_text: "Gerai, a\u0161 trumpam\u2026 nusimy\u017Et. Tu niekur nedink."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2168,7 +2168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "O tu nerviniesi d\u0117l mi\u0161ko\u2026 ar d\u0117l \u0161ito?\r\n"
+  m_text: Juokingas tu.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3210,7 +3210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Gedvinai, sakiau tau, kad nesu tikras d\u0117l toki\u0173 dalyk\u0173.\r\n"
+  m_text: "Kur tu i\u0161\u0117jai?!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3639,7 +3639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B\u016Btent tai mane ir \u0161iek tiek neramina.\r\n"
+  m_text: "Jo\u2026 gra\u017Eu. Per daug tylu tik."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3741,7 +3741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 709d2640b71124e439a1230e2cfc47b0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.16762927
+      value: 0.16762926
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 709d2640b71124e439a1230e2cfc47b0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3749,7 +3749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 709d2640b71124e439a1230e2cfc47b0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.98585016
+      value: -0.9858501
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 709d2640b71124e439a1230e2cfc47b0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3929,9 +3929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Atsipalaiduok. Blogiausiu atveju susigrumsim su kokiu lokiu ar dar kuo.
-
-'
+  m_text: "Tyla yra gerai. Mi\u0161kas gyvas, tiesiog klausyt reikia."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4421,7 +4419,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1475886478}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 29a46ceb5ed13e64ab8f5a476318bf97, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -4455,8 +4453,35 @@ PlayableDirector:
     value: {fileID: 1525018511}
   - key: {fileID: -3350609237635048617, guid: 29a46ceb5ed13e64ab8f5a476318bf97, type: 2}
     value: {fileID: 682192269}
+  - key: {fileID: -6469888461793513653, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 2075036737}
+  - key: {fileID: -2733701479827324926, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 81643329}
+  - key: {fileID: -8702449509332770512, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 2075036737}
+  - key: {fileID: 8952430320067201405, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 81643329}
+  - key: {fileID: -6970112455375464167, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 12010052}
+  - key: {fileID: 4666325703828967174, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 111385898}
+  - key: {fileID: -2962649922178746230, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 1214586370}
+  - key: {fileID: 3037614692879660502, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 1301617222}
+  - key: {fileID: 6099016911813620543, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 1570042136}
+  - key: {fileID: -521820447898210321, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 762352783}
+  - key: {fileID: -2504060395733208897, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 221317262}
+  - key: {fileID: -2335816914330366343, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 2027751821}
+  - key: {fileID: -6521019401988799288, guid: f82e0b23a9002e7488c47f911b5f86aa, type: 2}
+    value: {fileID: 1089870925}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - f3e8d36470bbc95408f8779bc47b12c3: {fileID: 1214586370}
 --- !u!4 &1475886481
 Transform:
   m_ObjectHideFlags: 0
@@ -4465,11 +4490,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475886478}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.10250649, y: 0.8197199, z: -0.15509881, w: -0.5417528}
-  m_LocalPosition: {x: 519.8842, y: 47.68169, z: 194.94926}
+  m_LocalRotation: {x: -0.0066658086, y: -0.99318105, z: 0.07313183, w: -0.09054697}
+  m_LocalPosition: {x: 495.12558, y: 50.61501, z: 265.2164}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 12010051}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480161559
@@ -4931,7 +4957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tai man i\u0161vis nepadeda..."
+  m_text: "Man atrodo, tu jau per daug \u012Fsiklaus\u0119s..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5207,31 +5233,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99171096
+      value: 0.991711
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.05061603
+      value: 0.050616033
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.11186028
+      value: 0.11186029
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.037877046
+      value: -0.03787705
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 6.25
+      value: 359.9917
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 12.67
+      value: 0.128955
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -3.68
+      value: 359.9858
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 259cb65389daa8742988cc4d5a6b2259, type: 3}
       propertyPath: m_Name
@@ -6060,8 +6086,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ai\u0161ku. Galvoji, a\u0161 dvi valandas va\u017Eiuosiu \u012F mi\u0161k\u0105
-    blaivas?\r\n"
+  m_text: ...Gedvinai?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6341,7 +6366,7 @@ Light:
   serializedVersion: 12
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 85
+  m_Intensity: 3
   m_Range: 7.9
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -6827,7 +6852,6 @@ SceneRoots:
   - {fileID: 1684888374}
   - {fileID: 1252452318}
   - {fileID: 2063939546}
-  - {fileID: 12010051}
   - {fileID: 1475886481}
   - {fileID: 1035060349}
   - {fileID: 1157287839}
