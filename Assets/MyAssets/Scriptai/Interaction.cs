@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    [SerializeField]
-    DialogueManager dialogueManager;
+    [SerializeField] DialogueManager dialogueManager;
 
-    [SerializeField]
-    Dialogue dialogue;
+    [SerializeField] Dialogue dialogue;
 
     bool player_detection = false;
     bool currently_talking = false;
